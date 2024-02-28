@@ -1,0 +1,479 @@
+\documentclass[12pt, openright, twoside, a4paper, chapter=TITLE, english,brazil]{abntex2}
+%\usepackage{pslatex}
+\usepackage{lmodern}			% Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{amsmath} %package para editar matrizes
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{lipsum}				% para geração de dummy text
+\usepackage[alf, bibjustif]{abntex2cite}                %usa o pacote abntex e justificar a ref bibliográfica
+\usepackage{float} %para colocar a opção H na figura, ou seja, colocar a figura em um lugar específico que não no inicio da page
+\usepackage{fancyhdr} %package para editar o cabeçalho
+\usepackage{multirow} %package para tabela
+
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+\titulo{DÍVIDA PÚBLICA BRASILEIRA NO ESPECTRO MACROECONÔMICO:\\ Uma análise no século XXI}
+\autor{Filipe Marques Dias}
+\local{Mariana, MG}
+\data{2019}
+\orientador{Carlos Eduardo Gama Torres}
+\coorientador{Claudio Burian Wanderley}
+\instituicao{%
+  UNIVERSIDADE FEDERAL DE OURO PRETO -- UFOP
+  \par
+  Programa de Pós-Graduação em Economia Aplicada
+  \par
+ Mestrado em Economia Aplicada}
+\tipotrabalho{Tese (Mestrado)}
+% O preambulo deve conter o tipo do trabalho, o objetivo, 
+% o nome da instituição e a área de concentração 
+\preambulo{Tese de mestrado apresentada a banca do Programa de Pós-Graduação em Economia Aplicada (PPEA) da Universidade Federal de Ouro Preto (UFOP) como requisito parcial para obtenção do Grau de Mestre em Economia Aplicada.} 
+% ---
+
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+%-----
+%-----Alterando características da capa
+%\renewcommand{\imprimircapa}{%
+%\begin{capa}%
+%\center
+%{\ABNTEXchapterfont\large\imprimirinstituicao}
+%\vspace*{4 cm}
+%\par
+%{\ABNTEXchapterfont\large\imprimirautor}
+%\vspace*{4 cm}
+%\par
+%{\ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo}
+%\vspace*{\fill}
+%\par
+%{\large\imprimirlocal}
+%\par
+%{\large\imprimirdata}
+%\vspace*{1cm}
+%\end{capa}
+% }
+% --- 
+
+% ---  Alterando a contra capa
+%\makeatletter
+%\renewcommand{\folhaderostocontent}{
+%  \begin{center}
+
+    %\vspace*{1cm}
+%    {\ABNTEXchapterfont\large\imprimirautor}
+
+%    \vspace*{\fill}\vspace*{\fill}
+%    \begin{center}
+%      \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
+%    \end{center}
+%    \vspace*{\fill}
+
+%    \abntex@ifnotempty{\imprimirpreambulo}{%
+%      \hspace{.45\textwidth}
+%      \begin{minipage}{.5\textwidth}
+%          \SingleSpacing
+%         \imprimirpreambulo
+%       \end{minipage}%
+%       \vspace*{\fill}
+%    }%
+
+   % {\abntex@ifnotempty{\imprimirinstituicao}{\imprimirinstituicao\vspace*{\fill}}}%
+
+%    {\large\imprimirorientadorRotulo~\imprimirorientador\par}
+%    \abntex@ifnotempty{\imprimircoorientador}{%
+%       {\large\imprimircoorientadorRotulo~\imprimircoorientador}%
+%    }%
+%    \vspace*{\fill}
+%
+%    {\large\imprimirlocal} %<<<< isto imprime o local
+%    \par
+%    {\large\imprimirdata} %<<<< isto imprime a data
+%    \vspace*{1cm}
+%
+%  \end{center}
+%}
+
+
+% \makeatother
+%------------------------
+
+% informações do PDF---Tratar dos hiperlinks das citações para ficar azul de novo modificar para blue os que estão em black
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		%pdftitle={\@title}, 
+		%pdfauthor={\@author},
+    	%pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+		colorlinks= true,       		% false: boxed links; true: colored links
+    	linkcolor=black,          	% color of internal links
+    	citecolor=black,        		% color of links to bibliography
+    	filecolor=magenta,      		% color of file links
+		urlcolor=black,
+		bookmarksdepth=2
+}
+\makeatother
+% --- 
+
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+\setlength{\abovecaptionskip}{15pt} % espaço entre legenda e tabela ou gráfico
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.25cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+\imprimircapa
+\imprimirfolhaderosto*
+
+% ---
+% Inserir a ficha bibliografica
+% ---
+% Isto é um exemplo de Ficha Catalográfica, ou ``Dados internacionais de
+% catalogação-na-publicação''. 
+% Porém, a biblioteca da sua universidade lhe fornecerá um PDF
+% com a ficha catalográfica definitiva após a defesa do trabalho. Quando estiver
+% com o documento, salve-o como PDF no diretório do seu projeto e substitua todo
+% o conteúdo de implementação deste arquivo pelo comando abaixo que está comentado 
+% (nao se esqueça de comentar o antigo ambiente de ficha catalográfica):
+%
+% \begin{fichacatalografica}
+%     \includepdf{fig_ficha_catalografica.pdf}
+% \end{fichacatalografica}
+%
+%
+% Ou, você poderá também ler os dados da ficha e adicionar no póprio código
+% como as palavras-chave, CDU e dimensões do trabalho: 
+\begin{fichacatalografica}
+	\vspace*{\fill}					% Posição vertical
+	\hrule							% Linha horizontal
+	\begin{center}					% Minipage Centralizado
+	\begin{minipage}[c]{12.5cm}		% Largura
+	
+	\imprimirautor
+	
+	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
+	\imprimirlocal, \imprimirdata-
+	
+	\hspace{0.5cm} \pageref{LastPage} p. : il. (algumas color.) ; 30 cm.\\
+	
+	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
+	
+	\hspace{0.5cm}
+	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
+	\imprimirdata.}\\
+	
+	\hspace{0.5cm}
+		1. Palavra-chave1.
+		2. Palavra-chave2.
+		I. Orientador.
+		II. Universidade Federal de Ouro Preto.
+		III. Faculdade de xxx.
+		IV. Título\\ 			
+	
+	\hspace{8.75cm} CDU 02:141:005.7\\
+	
+	\end{minipage}
+	\end{center}
+	\hrule
+\end{fichacatalografica}
+% ---
+
+% ---% ---
+% Inserir folha de aprovação
+% ---
+
+% Isto é um exemplo de Folha de aprovação, elemento obrigatório da NBR
+% 14724/2011 (seção 4.2.1.3). Você pode utilizar este modelo até a aprovação % do trabalho. Após isso, substitua todo o conteúdo deste arquivo por uma % imagem da página assinada pela banca com o comando abaixo:
+%
+% \includepdf{folhadeaprovacao_final.pdf}
+%
+\begin{folhadeaprovacao}
+% 
+   Dissertação de Mestrado defendida e aprovada, em $12$ de $Julho$ de \imprimirdata, pela comiss{\~a}o avaliadora constitu{\'i}da pelos professores:
+   \vspace*{\fill}
+   \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
+   \vspace*{\fill}
+   \assinatura{\textbf{Prof. Claudio Burian Wanderley, Dr.} \\ Co-orientador}
+   \vspace*{\fill}
+   \assinatura{\textbf{Prof. Ivair Ramos da Silva, Dr.} \\ Convidado}
+   \vspace*{\fill}
+   \assinatura{\textbf{Prof. Igor Viveiros Melo Souza, Dr.} \\ Convidado}
+   \vspace*{\fill}
+   %\assinatura{\textbf{Professor} \\ Convidado 4}
+  % \vspace*{\fill}
+      
+   \begin{center}
+    \vspace*{0.5cm}
+    {\large\imprimirlocal}, {\large\imprimirdata}
+    \vspace*{1cm}
+  \end{center}
+  
+\end{folhadeaprovacao}
+%%------------------------------------------
+
+% ---
+% Dedicatória
+% ---
+\begin{dedicatoria}
+   \vspace*{\fill}
+   \centering
+   \noindent
+   \textit{Ao ser supremo e a meus familiares que representam o motivo\\
+              e a causa desse esforço. Também ao futuro de um país com tudo a oferecer\\
+              e um povo ingrato para perceber. } \vspace*{\fill}
+\end{dedicatoria}
+% ---
+
+% ---
+% Agradecimentos
+% ---
+\begin{agradecimentos}
+Os agradecimentos são por natureza injustos, pois limitam-se a restringir a poucos. Entretanto, me entrego a esse esforço de gratidão aos que comigo construiram ou participaram dessa caminhada até o mestrado oferecendo todo apoio e compreensão.
+
+
+
+\end{agradecimentos}
+% ---
+
+% ---
+% Epígrafe
+% ---
+\begin{epigrafe}
+    \vspace*{\fill}
+	\begin{flushright}
+		\textit{'Um sistema econômio nacional, assim como todo conjunto\\
+		econômico complexo, se caracteriza pela forma como\\
+		são coordenadas as decisões dos agentes econômicos." \\
+		(Celso Furtado)}
+	\end{flushright}
+\end{epigrafe}
+% ---
+
+% ---
+% RESUMOS
+% ---
+
+% resumo em português
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+\begin{resumo}
+Na busca de compreender a dívida pública brasileira interna e a sua relação com as variáveis macroeconômicas, é realizado uma abordagem teórica na primeira parte, uma análise da receita e gasto público na segunda e por fim o uso de modelos de vetores autorregressivos estrutural (SVAR) para entender a correalação entre essas variáveis. 
+
+ \textbf{Palavras-chave}: Choques Macroeconômicos, Dinâmica das Finanças Públicas Brasileira, Dívida Pública Não Linear, Despesa Pública, Modelo Vetor Autorregressivo Estrutural. 
+
+ \textbf{Códigos JEL}: C51, E3, E6, H61, H68, N16. 
+
+\end{resumo}
+
+% resumo em inglês
+\begin{resumo}[Abstract]
+ \begin{otherlanguage*}{english}
+In order to understand the internal Brazilian public debt and its relation to the macroeconomic variables, 
+   \vspace{\onelineskip}
+ 
+ \noindent 
+\textbf{Keywords}: Macroeconomic Shocks, Brazilian Public Debt Dynamics, Nonlinear Public Debt, Government Expenditure,  Structural Vector Autoregression Model.
+
+\textbf{JEL codes}: C51, E3, E6, H61, H68, N16. 
+ \end{otherlanguage*}
+\end{resumo}
+
+
+% ---
+% inserir o sumario
+% ---
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% %Colocar numeração nas páginas
+\pagestyle{fancy}
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{}
+\rhead{\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+% ----------------------------------------------------------
+% Estrutura dos capítulos
+\textual
+\chapter*[INTRODUÇÃO]{INTRODUÇÃO}
+\addcontentsline{toc}{chapter}{INTRODUÇÃO}
+
+A dívida bancária, mobiliária e/ou a emissão monetária\footnote[1]{Também conhecido por Senhoriagem.}, são  instrumentos pelos quais os governos financiam  seu déficit. No entanto, caso não observado a manutenção saudável do endividamento público, o Estado pode ter estranguladas as suas capacidades de realizar políticas públicas. Compreendendo a importância da manutenção dessas capacidades do Estado, esse trabalho tem como objetivo analisar a dívida pública estatal brasileira para que sejam obtidas  informações que ajudem a entender suas especificidades no âmbito das variáveis macroeconômicas.
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter {Endividamento interno um enfoque teórico} 
+\label{cap2}
+
+O crescimento do endividamento público é um tema frequentemente debatido, principalmente por causa de seus possíveis impactos, tais como a necessidade de aumento de impostos, corte de programas sociais, fuga de capitais, entre outros. Contudo, tal debate torna-se mais acirrado devido as diferenças nas abordagens teóricas utilizadas na compreensão do mesmo. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section {Equivalência Ricardiana e o Enfoque Keynesiano} 
+\label{se2.1}
+
+Segundo \citeonline{hermann2002macroeconomia} é possível realizar a divisão de concepção da administração da dívida pública em dois enfoques, sendo o enfoque Keynesiano e o do modelo de Equivalência Ricardiana. Na primeira concepção é destacado o “princípio da demanda efetiva” em que o gasto exerce a função de determinante da atividade econômica, portanto o Estado passa a ter como um dos seus objetos de atuação a realização de políticas públicas anticíclicas, ou seja, o gasto público exerce uma função além do que há de cunho financeiro.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section {Endividamento público ótimo?}
+\label{se2.2}
+
+Na contraposição das duas correntes teóricas do keynesianismo e da equivalência ricardiana, surge a necessidade de compreender se haveria um nível de endividamento ótimo a ser seguido. \citeonline{seidman2012} destaca a necessidade de ser austero em momentos de progresso econômico e dar estímulos fiscais em momentos de crise, entretanto, outro questionamento que pode surgir é em qual medida?
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section {Há quem se imputa a responsabilidade fiscal?}
+\label{se2.3}
+
+Há ainda a discussão sobre a relação entre nível de preços e dívida pública, sendo essa perspectiva importante pois o Banco Central do país pode se ver impelido a aumentar a taxa de juros para controlar a inflação e assim aumentar o custo do déficit público, tema abordado por autores como \citeonline {buiter1999fallacy}, \citeonline{gordon2002price}, \citeonline{christiano2000understanding} e \citeonline{giannitsarou2006inflation}.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section {Conceitos de dívida}
+\label{se2.4}
+
+A dívida pública brasileira tem duas formas de mensuração usuais, sendo elas à dívida bruta e a dívida líquida. A primeira refere-se apenas ao passivo do governo, já o conceito de dívida líquida leva em conta também os ativos. Podemos assim destacar as séries de dados denominadas Dívida Líquida do Setor Público (DLSP) e a Dívida Bruta do Governo Geral (DBGG), ambas disponibilizadas pelo Banco Central (Bacen). As diferenças nas duas formas de mensurar surgem principalmente devido as peculiaridades existentes nas responsabilidades atribuídas ao Bacen e ao Tesouro Nacional (TN).
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter {Uma análise da despesa e receita e seu crescimento}
+\label{cap3}
+
+Após a delimitação teórica feita na primeira parte e a determinação das variáveis referentes aos indicadores de dívida pública como a DLSP e a DBGG é preciso compreender a composição das despesas que podem levar à elevação do endividamento público e a sua estrutura ao longo do tempo, assim será preciso abordar as receitas e despesas. Torna-se assim necessário abordar as receitas e despesas do Governo Central de modo que esse capítulo tem o intuito de discorrer sobre este tema. A análise dos indicadores de receita e despesa dar-se-á a partir de 2002 até o ano de 2017, período abarcado pela parte empírica desta pesquisa.
+
+
+
+\section {Receita tributária} 
+\label{se3.1}
+
+Os dados da receita tributária e da despesa pública são disponibilizado pelo Tesouro Nacional (TN). Assim deve-se  destacar os principais conceitos que são empregados nas composições do registro das receitas públicas. A Receita Total compreende todos as receitas provenientes da administração da Receita Federal do Brasil (RFB), da arrecadação líquida do Regime de Previdência Social (RGPS) e as receit
+
+\begin{citacao}
+As análises preliminares efetuadas permitem distinguir duas tendências importantes na evolução do gasto federal: o peso crescente das transferências, seja para famílias, seja para outros níveis de governo; e a estabilização do consumo intermediário do governo em face do processo de descentralização de serviços públicos, principalmente nas áreas de saúde e educação. \citeonline[p. 359]{orair2013carga}.
+\end{citacao}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section {A dívida pública e os juros}
+\label{se3.3}
+
+O que se percebe ao analisarmos a despesa e a receita líquida é que após 2014 as despesas cresceram a uma velocidade maior do que as receitas, processo esse que se originou a partir da retração econômica dada a constância do crescimento das despesas públicas. 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Variáveis macroeconômicas e o déficit público uma análise econométrica}
+\label{cap4}
+
+Nesse capítulo busca-se estimar econometricamente as relações existentes entre o déficit público e as variáveis macroeconômicas. Procura-se principalmente entender como se comportam a despesa e a  receita pública, além de analisar os impactos da variável dívida pública sobre a taxa de juros, câmbio e inflação. A partir dessa análise será possível compreender a dívida pública empiricamente e, desta forma,  analisar a factibilidade dos resultados e teorias discutidas ao longo do trabalho.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Modelo econométrico a ser aplicado} 
+\label{se4.1}
+
+O modelo econométrico a ser aplicado no modelo \textit{Structural Vector Autoregression} (SVAR), segue a equação geral na forma reduzida definida em \ref{e10}: 
+\begin{center}
+\begin{equation}
+Y_{t}=\sum_{i=1}^{k} C_{i}Y_{t-i} + \sum_{i=1}^{k} \tau _{i} d_{t-i} + u_{t}
+\label{e17}
+\end{equation}
+\end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textual
+\chapter*{CONSIDERAÇÕES FINAIS}
+\addcontentsline{toc}{chapter}{CONSIDERAÇÕES FINAIS}
+
+A partir da exposição dos modelos econométricos, como também do arcabouço teórico, é possível fazer algumas inferências. O que se destaca é que de fato a elevação do gasto público representa um choque positivo no PIB, entretanto, se houver uma elevação da dívida pública o choque é negativo. A partir daí, depreende-se que um choque fiscal que represente um aumento no nível do endividamento público pode acabar por não causar o efeito keynesiano sobre o PIB real. Outro fator, é que o modelo VAR e os resultados SVAR parece não indicar um ambiente Ricardiano durante o período analisado, dado os resultados apresentados nos choques de impulso-resposta.
+
+Q
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Fim da estrutura dos capítulos
+% chamando o arquivo refs.bib
+\bibliography{rfs}
+
+%Apêndice (elaboração do autor) com os dados a mais (\appendix or \annex) - Anexo não é elaboração do autor
+\begin{apendicesenv}
+	
+	% Imprime uma página indicando o início dos apêndices
+	\partapendices
+
+\chapter{Gráfico das variáveis}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics{Figure/a1.jpg}
+\caption{Base de dados de 2002 a 2017 das variáveis do modelo econométrico}
+\label{a1}
+\fonte{\citeonline{tn2018, ipea2018a}. Elaboração do autor.}
+\end{center}
+\end{figure}
+
+\chapter{ Resposta despesa pública}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=16cm]{Figure/a2.jpg}
+\caption{Gasto público resposta as variáveis macroeconômicas}
+\label{a2}
+\fonte{Elaboração do autor.}
+\end{center}
+\end{figure}
+
+\end{apendicesenv}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
