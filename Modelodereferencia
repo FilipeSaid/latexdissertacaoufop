@@ -1,0 +1,179 @@
+@article{ayres2019monetary,
+  title={The Monetary and Fiscal History of Brazil, 1960-2016},
+  author={Ayres, Joao and Garcia, Marcio and Guill{\'e}n, Diogo A and Kehoe, Patrick J},
+  year={2019},
+  institution={National Bureau of Economic Research}
+}
+
+@article{khair2005carga,
+  adress={S{\ã}o Paulo},
+  title={Carga tribut{\'a}ria},
+  subtitle={mensura{\c c}{\~a}o e impacto sobre o crescimento},
+  author={Khair, Amir and Ara{\'u}jo, {\'{e}}rika Amorim and Afonso, Jos{\'e} Roberto R},
+  journal={Revista de economia {\&} relações internacionais},
+  volume={4},
+  number={7},
+  mont={Jul.},
+  pages={27-42},
+  year={2005}
+}
+
+@book{rezende2008dilema,
+title={O dilema fiscal: remendar ou reformar?},
+author={Silva, Fernando Antonio Rezende da and de Oliveira, Fabr{\'i}cio Augusto and Ara{\'u}jo, Erika},
+year={2008},
+publisher={FGV Editora}
+}
+
+@article{das2010managing,
+title={Managing public debt and its financial stability implications},
+author={Das, Udaibir S and Papapioannou, Michael and Pedras, Guilherme and Ahmed, Faisal and Surti, Jay},
+journal={SOVEREIGN DEBT FINANCIAL CRISIS},
+pages={357},
+year={2010}
+}
+
+@book{caselli2004,
+address={Cambridge},
+title={Fiscal Discipline and The Cost of Public Debt Service: Some estimates for OECD countries},
+author={Caselli, Francesco and Ardagna, Silvia and Lane, Thimothy},
+note={Working Paper n. 10788},
+pages={30},
+year={2004},
+publisher={National Bureau of Economic Research}
+}
+
+@article{athayde2015divida,
+title={D{\'i}vida p{\'u}blica brasileira: uma an{\'a}lise comparativa dos tr{\^e}s principais indicadores de esfor{\c{c}}o fiscal do governo},
+author={Athayde, David Rebelo and Vianna, Andr{\'e} Coelho},
+journal={Nova Economia},
+volume={25},
+number={2},
+pages={403--420},
+year={2015},
+publisher={SciELO Brasil}
+}
+
+@article{baksay2016public,
+title={Public debt},
+author={Baksay, Gergely and Kics{\'a}k, Gergely and Szalai, {\'A}kos and others},
+journal={MNB Handbook},
+volume={1},
+number={3},
+pages={1-82},
+url={https://www.mnb.hu/letoltes/mnb-oktatasi-fuzetek-4-allamadosag-eng-1121-vegleges.pdf},
+urlaccessdate={20 nov. 2017},
+year={2016},
+publisher={Magyar Nemzeti Bank (Central Bank of Hungary)}
+}
+
+@article{barro1974government,
+title={Are government bonds net wealth?},
+author={Barro, Robert J},
+journal={Journal of political economy},
+volume={82},
+number={6},
+pages={1095-1117},
+url={http://nrs.harvard.edu/urn-3:HUL.InstRepos:3451399},
+urlaccessdate={05 abr. 2017},
+year={1974},
+publisher={The University of Chicago Press}
+}
+
+@techreport{battaglini2015political,
+title={Political Economy of Debt and Growth},
+author={Battaglini, Marco and Barseghyan, Levon},
+url={http://nrs.harvard.edu/urn-3:HUL.InstRepos:3451399},
+urlaccessdate={05 abr. 2017},
+note={Working Paper n. 21660},
+year={2015},
+institution={National Bureau of Economic Research}
+}
+
+@misc{barsky1984ricardian,
+title={Ricardian consumers with Keynesian propensities},
+author={Barsky, Robert B and Mankiw, N Gregory and Zeldes, Stephen P},
+year={1984},
+publisher={National Bureau of Economic Research Cambridge, Mass., USA}
+}
+
+@book{bcb2018,
+address={Rio de Janeiro},
+author={BCB, Banco Central do Brasil},
+title={finan{\c{c}}as p{\´u}blicas},
+publisher={banco central do brasil},
+url={https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries},
+urlaccessdate={1 jan. 2018},
+year = {2018}
+}
+
+@book{bcb2017,
+author={BCB, Banco Central do Brasil},
+title={Manual de Estatísticas Fiscais},
+publisher={ Banco Central do Brasil},
+url={http://www.bcb.gov.br/ftp/infecon/Estatisticasfiscais.pdf},
+urlaccessdate={30 Dez. 2017},
+year={2017}
+}
+
+@TECHREPORT{{carriere2018,
+title = {The Macroeconomic Effects of Fiscal Consolidation in Emerging Economies: Evidence from Latin America},
+author = {Carriere-Swallow, Yan and David, Antonio and Leigh, Daniel},
+year = {2018},
+institution = {International Monetary Fund},
+type = {IMF Working Papers},
+number = {18/142},
+abstract = {We estimate the short-term effects of fiscal consolidation on economic activity in 14 countries in Latin America and the Caribbean. We examine contemporaneous policy documents to identify changes in fiscal policy motivated by a desire to reduce the budget deficit and not by responding to prospective economic conditions. Based on this narrative dataset, our estimates suggest that fiscal consolidation has contractionary effects on GDP, consistent with a multiplier of 0.9. We find these effects to be close to those in OECD countries based on a similarly constructed dataset (Devries and others, 2011). We also find similar estimation results for the two groups of economies for the effect of fiscal consolidation on the external current account balance, providing support for the twin deficits hypothesis.},
+keywords = {Fiscal consolidation;Fiscal policy;Taxation;Emerging markets;Latin America;emerging market economies; General},
+url = {https://EconPapers.repec.org/RePEc:imf:imfwpa:18/142}
+}
+
+@article{silva2017modelagem,
+title={Modelagem da Rela{\c{c}}{\~ao} entre a Infla{\c{c}}{\~ao} do Consumidor e a Infla{\c{c}}{\~ao} do PIB},
+author={Silva, Alexandre Manoel and Carvalho, Alexandre Ywata and Rocha, Bruno Fabr{\'i}cio Ferreira da and Bevilaqua, Giovanni Silva},
+note={Texto para Discussão 1505},
+url={http://www.ipea.gov.br/cartadeconjuntura/index.php/2017/05/30/modelagem-da-relacao-entre-a-inflacao-do-consumidor-e-a-inflacao-do-pib/},
+urlaccessdate={17 Abr. 2018},
+year={2017},
+publisher={Instituto de Pesquisa Econ{\^o}mica Aplicada}
+}
+
+@article{blanchard1985debt,
+title={Debt, deficits, and finite horizons},
+author={Blanchard, Olivier J},
+journal={Journal of political economy},
+volume={93},
+number={2},
+pages={223--247},
+year={1985},
+publisher={The University of Chicago Press}
+}
+
+@techreport{blanchard2004fiscal,
+  title={Fiscal dominance and inflation targeting: lessons from Brazil},
+  author={Blanchard, Olivier},
+  year={2004},
+  institution={National Bureau of Economic Research}
+}
+
+@article{blanchard1988beyond,
+  title={Beyond the natural rate hypothesis},
+  author={Blanchard, Olivier J and Summers, Lawrence H},
+  journal={The American Economic Review},
+  volume={78},
+  number={2},
+  pages={182--187},
+  year={1988},
+  publisher={JSTOR}
+}
+
+@article{blanchard2002empirical,
+  title={An empirical characterization of the dynamic effects of changes in government spending and taxes on output},
+  author={Blanchard, Olivier and Perotti, Roberto},
+  journal={the Quarterly Journal of economics},
+  volume={117},
+  number={4},
+  pages={1329--1368},
+  year={2002},
+  publisher={MIT Press}
+}
